@@ -33,3 +33,28 @@ const Function = function(){
 }
 // Ye ho gaya Function function to pata hai ki kaise likhte hai 
 // IMP Array & Object ke datatype ko Function hi kaha jaata hai---And--- Function ke data type ko "ObjectFunction" kaha jaata hai
+
+// *******************MEMORY**************/
+// There are two types of Memory Stack and Heap
+// Stack(Primitive ke liye) and Heap(Non-Primitive ke liye)
+// Eg:
+let MyName = "Furqaan"
+let anotherName = MyName
+anotherName = "Shadan"
+console.log(MyName);
+console.log(anotherName);
+// Stack memory me ye hota hai ki jitna variable ke hisaab se place di jaati hai......
+// aur jab ham kisi ki value leke change krte hai tab original variable ek "COPY" uska de deta hai dusre ko use karne ke liye ......
+//  isliye Original Value Change nhi ho gi Stack me
+
+let OneUser = {
+    Email : "fur1@gmail.com",
+    Name : "Furqaan"
+}
+let TwoUser =  OneUser
+TwoUser.Email = "Furq@007.com"
+
+console.log(OneUser);
+console.log(TwoUser);
+//  Heap Memory me ye hota hai ki access and pura chize wo ek hi jagah pe hota hai aur wo ek se leta hai jisme pura function hota....
+//And jab wo leta hai ya fir apun koi change karte hai to wo pura change kar deta hai 
