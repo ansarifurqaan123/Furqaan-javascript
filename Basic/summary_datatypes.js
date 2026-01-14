@@ -34,7 +34,8 @@ const Function = function(){
 // Ye ho gaya Function function to pata hai ki kaise likhte hai 
 // IMP Array & Object ke datatype ko Function hi kaha jaata hai---And--- Function ke data type ko "ObjectFunction" kaha jaata hai
 
-// *******************MEMORY**************/
+// *******************MEMORY**************//
+// / *******MEMORY DIAGRAM NOTE BOOK ME HAI***********
 // There are two types of Memory Stack and Heap
 // Stack(Primitive ke liye) and Heap(Non-Primitive ke liye)
 // Eg:
@@ -58,3 +59,4 @@ console.log(OneUser);
 console.log(TwoUser);
 //  Heap Memory me ye hota hai ki access and pura chize wo ek hi jagah pe hota hai aur wo ek se leta hai jisme pura function hota....
 //And jab wo leta hai ya fir apun koi change karte hai to wo pura change kar deta hai 
+
