@@ -40,13 +40,13 @@ const User = {
 // ab ek function lagainge apne object me
 
 User.greeting = function(){
-    console.log("Assalamualaikum");
+    // console.log("Assalamualaikum");
 }
 // ye ek simple function hua haina 
 
 // ab meko kisi special key me function laga na hai jaise greeting meko name pe laga na hai to iske liye..
 User.greeting2 = function(){
-    console.log(`Assalamualaikum ${this.name}`);
+    // console.log(`Assalamualaikum ${this.name}`);
 }
 // phle to backtext laga na rhe ga "(`)" ye and ishi me notation bhi dena ho ga ${} aesa par isme (this.name,Email) etc aese work karwaana ho ga function ko  
 // to kuch is taraha bane ga syntaxt (`Assalamualaikum ${this.name}`)
@@ -103,12 +103,46 @@ const obj5 = {...obj1,...obj2,...obj3,...obj4}
 // ye syntax puri keys bata deta hai
 // console.log(Object.values(ComiteeUsers));
 // ye value ke liye
-console.log(Object.entries(ComiteeUsers));
+// console.log(Object.entries(ComiteeUsers));
 // isme array me array band ke aata hai har ek key:value ka
 
 // jaise object me koi property hai ki nhi ye pata krna hai to manually check krlo ya fir usse pucho(hasOwnProperty)and propert ko("aese kr ke likhna")...syntax se
 
-console.log(ComiteeUsers.hasOwnProperty("age"));
+// console.log(ComiteeUsers.hasOwnProperty("age"));
+
+// *******OBJECT DE-STRUCTURE ***********
+// de-structure dono me hota hai array me bhi and obect me bhi abhi filhal object me padhainge
+// de srtctrue k mtlb simple hai ki object me koi naam hai wo bht bada hai and usko hame access krna hai par naam chota chahiye jo yaad rhe to is....
+// moment pe ham krte hai de strcture mtlb us naam ko chota kr denge and usse access kr lenge
+
+const de_strct = {
+     name: "Ansari mohd Furqaan",
+     Age: 23,
+     Address: "Gaibi Nagar Parkar Manzil"
+}
+// ab mujhe address ko de-strct krna hai to kaise krunga
+
+const {Address:jagah} = de_strct
+// console.log(jagah);
+// maine address ko jagah me convert kr diya ishe kahte hai de_struct
+// ab bhi {} bracket aata hai tb smjh jaane ka ki wo de_strct kiya aa raha hai
+
+// API kya hota hai API mtlb ki apna kaam dusre ke zariya karwaana ya fir uspe thop dena 
+// mtlb jaise ki google pe hm ne koi chiz daali to wo kaisi hai verified hai ki nhi ye sab hamara headache nhi ye google ka msla hai 
+// ushe API bolte hai API ki documentation ko "JSON" khte hai 
+// JSON kya hota hai ->
+// {
+//     "name": "Furqaan",
+//     "age": 23,
+//     "address": "Gn"
+// } -> ishe khte hai JSON, json kuch aur nhi ek object hi hai o curly brcket me aata hai bs iska koi define name nhi hota hai
+// json sirf object me nhi array me bhi aata hai wo kuch aese aata hai
+// [
+//     {},
+//     {},
+// ] 
+// deep me API ikdm aage 
+
 
 
 
