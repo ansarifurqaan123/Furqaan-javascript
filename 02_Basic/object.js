@@ -135,13 +135,13 @@ const {Address:jagah} = de_strct
 //     "name": "Furqaan",
 //     "age": 23,
 //     "address": "Gn"
-// } -> ishe khte hai JSON, json kuch aur nhi ek object hi hai o curly brcket me aata hai bs iska koi define name nhi hota hai
+// } -> ishe khte hai JSON, json kuch aur nhi ek object hi hai jo curly brcket me aata hai bs iska koi define name nhi hota hai
 // json sirf object me nhi array me bhi aata hai wo kuch aese aata hai
 // [
 //     {},
 //     {},
 // ] 
-// deep me API ikdm aage 
+// deep me API and json padheneg aage abhi sirf ek brief into liye hai ki kaise kar te hai aur kya rhta hai...
 
 
 
