@@ -84,4 +84,4 @@ const addtwo = function (num){
 
 // ye moment pe run karunga to koi error nhi aai ga mtlb sab function ko niche call kr raha hu
 // one ke calling function ko upar le liya and to wo run bhi ho ga and o/p bhi de ga 
-// second ko upar lunga to yaha pe error aai ga q ki second ko ham ek variable me hold kiye hai and koi bhi variable ka 
+// second ko upar lunga to yaha pe error aai ga q ki second ko ham ek variable me hold kiye hai and koi bhi variable ko function ke phele nhi execute kr waa skhte hai
