@@ -70,14 +70,14 @@ if(true){
 // there are two syntax to write the function
 
 // first
-console.log(addone(5));
+// console.log(addone(5));
 function addone(num){
     return num + 1
 }
 
 
 // second
-addtwo(5)
+// addtwo(5)
 const addtwo = function (num){
     return num + 2
 }
