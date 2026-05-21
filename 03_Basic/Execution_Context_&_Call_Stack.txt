@@ -1,0 +1,71 @@
+                        Javascript Exectuion Context
+Jab bhi java ko code milta hai wo apna ek jagah Global execution context bana deta hai ye banti hai mtlb "this" ki value Globa ec ho jaati hai
+Browser ka this ki value alag hoti hai jaise apun dekhe the "Window" naam ka par baaki engines ka alag hota hai                        
+
+Do type ke Execution context hote hai
+1) Gobal ec
+2) Functional ec
+
+Ab code ecution kaise hota hia... ye bhi do type ke hote hai
+1. Memory creation phase jise creation phase bhi kahte hai
+2. Execution phase
+
+Ek Code ke through example lete hai
+let val1 = 10
+let val2 = 5
+function addnum (num1,num2){
+    let total = num1 + num2
+    return
+}
+let result1 = addnum (val1,val2)
+let result2 = addnum (10,2)
+
+1.ab phele bane ga Global ec
+     
+2.second bane ga memory phase isme kya values aai ge :-
+val1---undefined
+val2---undefined
+function---defination...means pura function is line me define ho ke aagya
+result1----undefined
+result2---undefined
+
+3.third execution phase
+val1---10
+val2---5
+exec ke time ye function pe jb jaai ga to wo addnum ho jaai ga result pe nhi jaai ga
+result1 = 15......ye niche se upar aaya hai
+result2 = 12......iske liye bhi same whi new environment bane ga (new variable context & Exectuionthread)....same ye bhi niche se upar aaya hai
+
+function waali line jo ke define ho chuki hai (addnum---ye function hai....ab ye apna new execution context bana lega mtlb ab ye khud wapas se memory phase and executionphase kre ga result ke liye 
+abd addnum ke jo memoryphase and executionphase hai uska naam rhe ga "New variable context & Exectuionthread" respectively)
+
+wapas memoryphase function ke context ke liye
+val1---undefined
+val2---undefined
+total---undefined
+
+(ab execution phase functionke context ke liye 
+num1--10...num1 hi to val1 hai                                                                                         
+num2---5...num2 hi to val2 hai                                                                                         
+total---15                                                                                                             
+AB YE TOTAL VALUE JO HAI FNCTON KE HISAAB SE GLOBAL EC ME JAAI GI Q KI WO HI TO PARENT SCOPE HAI PURE CODE ka          
+*and imp point jo ye execution context jo new create hua ha wo complete hone baad khud se delete kr de ga*)            
+
+Abhi Exectuiondone nhi hua hai ab ye result waps se upar jaaiga kaha main execution waale part ki taraf
+
+                                 Call Stack
+stack hamesha ek box ke jaisa bane ga
+jaise 3 function hai haine and ham is 3 fnc ko ek ek kar ke use karenge to.... ab ye stack box me kaise jai ga sab se phele
+assume every line as a stack 0is1, 1is2, 2is3, and 3,is4
+3.
+2.
+1. One Fnc-------- fir ye stack se bahar aa jaai ga, then two fnc aaiga fir ye bhi bahar jaai ga, then three fnc fir ye bhi bahar aa jai ga
+0. Global Ec
+
+ab agar 3 fnc ko ek saath use krnge agar
+3. Three fnc
+2. Two fnc
+1. One fnc
+0. Global Ec
+
+Ab ye fnc bahar kaise aainge ye aainge "lifo" pe means last in first out phele three nikle ga, then two, then one 
