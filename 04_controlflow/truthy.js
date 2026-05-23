@@ -1,11 +1,11 @@
 // Truthy and Falsthy ye dono ko ka mtlb hai ki direct assume kr lete hai ki value true hi ho gi ya false hi ho gi
 const userid = []
-// if(userid){
-//     console.log("Logg in");    
-// }
-// else{
-//     console.log("Write userid");
-// }
+if(userid){
+    console.log("Logg in");    
+}
+else{
+    console.log("Write userid");
+}
 // jaise is code me sirf user id ka show hai case me to value aai gi par har chiz ki vaue alag aai gi wo jaante hai ham
 
 // Falsy Values:-
@@ -16,9 +16,9 @@ const userid = []
 // {},[], function(){} ye sb truthy value hai
 
 // empty array and empty object ko kaise handle(check) direct nhi kiya jaata hai, kre ab ye dekhenge
-// if (userid.length === 0){
-//     console.log('array is empty');
-// }
+if (userid.length === 0){
+    console.log('array is empty');
+}
 // length q liye q ki array hamesha length se hi check kiya jata hai ki kitni hai kaise hai
 
 const emptyobj = {}
