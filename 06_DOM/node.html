@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Element kaise bana na hai </title>
+</head>
+<body style = "background-color:black; color: white">
+    
+</body>
+<script>
+    // div mtlb html ek block bana deta hai
+    const div = document.createElement('div')
+    console.log(div);
+    div.className = "Main"
+    div.id = Math.round(Math.random()*10 + 1)
+    // ye ho gaya new element kaise bana hai an isko kuch bhi bolo tag attribute jo bhi
+    div.setAttribute("title","Title add ho gaya cum attrbute")
+    // ye hai attribute set krne ka tarika
+    div.style.color = "blue"
+    div.padding = "15px"
+    // ye abhi jo bhi ham div ko kar rhe hai wo abhi memory me hai page pe attach nhi hua hai to phele is child ko lo aur page pe attach karo and wo show ho ga
+    //  abhi pure code me ek bhi text nhi daale hai text daalne ka do tarika hai
+    
+    div.innerText = "Ye hua first tarika"
+    // first way -ye use hota hai quick chnge krne ke liye ye direct overwrite krta hai
+    const txt = document.createTextNode("Ye hua 2 tarika jisse ham khud ki direct node bana skhte hai")
+    div.appendChild(txt)
+    // second way jisme append laga ke text jo hm banai hai usko div se connect kr dena
+    // and ye do step me hota hai
+    //ye dono hi shi hai apni apni jagah 
+
+    document.body.appendChild(div)
+    // ye hua child ko page pe kaise show mtlb body content ko 
+</script>
+</html>

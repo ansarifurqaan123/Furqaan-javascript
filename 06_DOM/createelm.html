@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Starting (Creating New Element)</title>
+    <!-- isme ham jaanenge ki parent ko child ko apas me ek dusre se kaise access kiya jata hai -->
+<!-- isme ham scripting kar ke sab chize add krenge mtlb new element -->
+</head>
+<body style = "background-color: #212121; color: #fff">
+    <div class = 'parent'>
+        <!-- Ye hai example node pata krne ka ki kaise kya usme line rhti hai and dikhti hia -->
+        <div class="day">Monday</div>
+        <div class="day">Tuesday</div>
+        <div class="day">Wednesday</div>
+        <div class="day">Thursday</div>
+        <div class="day">Friday</div>
+        <div class="day">Saturday</div>
+    </div>
+</body>
+<script>
+    const Parent = document.querySelector('.parent')
+    // console.log(Parent);
+    // // ye ho gaya parent ko access krne ka tarika
+    // console.log(Parent.children)
+    // // ye ho gaya children ko accss krne ke trika
+    // console.log(Parent.children[2].innerHTML)
+    // // children ki value kya hai
+    for (let days = 0; days < Parent.children.length; days++) {
+        // console.log(Parent.children[days].innerHTML);
+        // Parent.children iska mtlb jo de raha hai wo hame children de rha hai isliye 
+    }
+    // Parent.children[4].style.color = 'blue' 
+    
+    // console.log(Parent.firstElementChild);
+    // console.log(Parent.lastElementChild);
+    // ye dono direct first and last child access krne ke liye parent se child pe "ka second third kuch nhi hota hai haa"
+    
+    // const dayOne = document.querySelector(".day")
+    // console.log(dayOne);
+    // // ye ho gaya direct child ko access krne ka jaise hm padhe hai ki querselctor hmesha first child hi deta hai
+    // console.log(dayOne.parentElement);
+    // // ye ho gaya child se parent ka pata karna parentElement se
+    // console.log(dayOne.nextElementSibling);
+    // // ye ho gaya first ke baad waala mtlb bhai
+    
+    console.log("NODES:", Parent.childNodes);
+    // ye ho gaya har parents ke child node ko dekhna(har parents ke pass apna khud ka child node hota hai)
+    // node hamesha zyada dikha ta hai q ki wo har enterline ko as txt leta hai node 
+    
+    
+    
+
+
+</script>
+</html>
