@@ -1,0 +1,67 @@
+<!-- DOM means Document Object Model--mtlb aapka document kaise bana hai kaun si lan se bana hai isme ham manipulation bhi kar skhte hai -->
+<!-- "."use kiya jaata hai dom me koi code ko access krne ke liye ek simple taur pe khi bhi entry chiye to . laga ke entry le lo -->
+<!-- main moto ye hai elemnt kaise select kare and usko kaise chnge ya uspe kaise operation lagai -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <title>DOM LEARNING</title>
+    <style>
+       .bg-black{
+        background-color: #212121;
+        color:#fff
+       }
+    </style>
+</head>
+<body class = "bg-black">
+    <div>
+        <h1 id = "title" class = "heading">'DOM LEARNING BY HITESH SIR' <span style = "display: none;">'It is a text content'</span></h1>
+       <h2>Ye example ke liye hai query selector ke liye ki kaun sa select krta hai</h2>
+       <h2>Ye example ke liye hai query selector ke liye ki kaun sa select krta hai</h2>
+       <h2>Ye example ke liye hai query selector ke liye ki kaun sa select krta hai</h2>
+        <p>We can going to do js and backend</p>
+        <input type="password" name="" id= "">
+        <ul>
+        <li class="list-item">onelist</li>  
+        <li class="list-item">onelist</li>  
+        <li class="list-item">onelist</li>  
+        <li class="list-item">onelist</li>  
+    </ul>
+    </div>
+</body>
+</html>
+<!-- "document." ye laga ke ham pure docu me se kisi ka bhi access le skhte hai -->
+
+<!-- dom me class ko access krne ke iye class nhi className liya jata hai 
+doc.ke aage get ka code aai ga getElenmentById aesa bht saara -->
+
+<!-- document.getElementById('title').getAttribute ye use hota hai key ki value jaanne ke liye
+and same agar get ki jagah set laga diye attribute pe setAttribute to ham koi bhi chiz set kar skhte hai, main chiz set overwrite kr deta hai values ko -->
+
+<!-- .notation laga ke kisi id ka access liye and fir usko ek variable bhi apna name deke hold kardo ge to aur easily access kr skhte hai and fir dot dot laga ke uspe khel na hai -->
+
+<!-- isme 3 tarike ka content nikal ne waalahota hai
+1) innerText - mtlb jo display horha hai wo show kre ga
+2) textContent - mtlb jo display nhi ho raha hai ya hide hai user se wo 
+3) innerHTML -  ye pura code show kar de ga -->
+
+<!-- Query Selector -> ye bhi tarika hai chizo ko select krne ka ab tum get se lo ya query se par real world me get waale se kiya jaata hai wo zyada familiar hai
+aesa q, get pe likho direct wo chiz aajati hai isme id ke liye "#" ye lagana pdhta hai and class ke liye "." ye agar do ke bich class me space ho ga to space hatake dot lagadena 
+
+1)querySelector - ye select krta hai jaise ki bht saari same chize uske first ko, jaise upar h2 teen hai par select ye phele h2 ko hi kare ga 
+and individual ko select krne ke liye bhi hota hai
+
+2)querySelectorAll :-
+ye jab dalenge to wo pura list select kr ke dega ek saat, par jab isko select krenge to ye ek Node List dega 
+
+NODE LIST :- ye ek type ka array hai par isme map ya baaki koi bhi loop direct nhi run ho ga iske liye isko ek variable me convert kr ke usko phele normal array ke form me laana ho ga 
+and then fir uske upar operation ya chnges jo bhi krna hai wo ho gi par abhi bhi direct nhi chnge kr skhte hai q ki hamare pass ab array hai and array me index hoti hai isliye index bata ke uspe perform kiya jata hai, ye krne ki wajah q ki hmne bht saara elemnt select kr ke rakha hua hai
+ab kuch bhi perform karna ho agar to direct jo variable banai hai ham "node to array" ka vari mtlb usko likho dot lagao and perform kro opr zyada tar FOREACH loop lgana q ki ye normal array nhi hai to map nhi use ho ga
+
+3)getElementByClassName :-  
+ye jab dalenge to wo class pe lage gi, par jab isko select krenge to ye ek HTMLCollection List dega 
+
+HTMLCollection list:- ye ek type ka array hai par isme ham koi bhi operation nhi kar skhte hai mtlb foreach ye sb nhi lge ga and "MAIN" isko agar ham variable me convert krnege to bhi array nhi banta hai
+to isko array me laane ke liye phele variable me convert karo and then us variable ko [ek line use hoti hai ya code "Array.form()"] iski bracket me daalo to wo array ban jaai gi
+ya fir jo var ko array.form me convert kiye the usko wapas se koi var me hold kr do and fir uspe perform kro ya fir direct perform kro-->
