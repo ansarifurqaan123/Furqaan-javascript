@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit and Remove Kaise kre</title>
+</head>
+<body style = "background-color: black; color: whitesmoke">
+    <ul class ="language">
+        <li>Java</li>
+        <li>Core</li>
+        <li>Lapi</li>
+
+    </ul>
+
+    
+</body>
+<script>
+// child select krne ka tarika 
+// const remoelem = document.querySelector("li:nth-child(7)") --- ek nth laga ke () me number daalna jo bhi child chiye uska
+// const outerse = document.querySelector("li:first-child")------ya fir first or last leke 
+
+
+//***********ADD ELEMENT************** 
+// ab isme function ke through element daalenge and nikaalenge
+function addElementLang(langui) {
+    const li = document.createElement('li')
+    li.innerHTML = `${langui}`
+    document.querySelector('.language').appendChild(li)
+}
+addElementLang("Python")
+// ye hitesh sir ne batai
+
+function addelembyown(addlielm) {
+    const adli = document.createElement('li')
+    adli.innerHTML = `${addlielm}`
+    document.querySelector('.language').appendChild(adli)
+}
+addelembyown("Khud se kiye")
+// ye maine kiya- ye func ke through ek eliment banai hai and usko parent se link kr ke screen pe jod diye hai
+// innerhtml me func ke type ko call kr ke usko run krwaa na rhta hai
+// abhi ye jo do tarika hai ye bht lamba and hectic hai jaise choti line ka code hai isliye ho gaya lekin jab hazar ya lakh ka code ho ga to bht tension ho ga q ki ye pura upar se niche traverse karta hai isliye bht hectic hai galat nhi hai pr difficult and lamba process hai
+// bade code me optimization error aajata hai isliye ache coder isko prefer nhi krte hai
+
+function direct(lidirct) {
+    const lidirect = document.createElement('li')
+    lidirect.innerText = "Ye ho gaya direct"
+    document.querySelector('.language').appendChild(lidirect)
+}
+direct()
+// ye ho gaya direct bigair call kiye innertext ki help se
+
+function addOptiwayse(optili){
+    const opli =  document.createElement('li')
+    opli.appendChild(document.createTextNode(optili))
+    // hame ek txt add krna hai jo li pe fit ho- iske liye pura doc slct kiye usme crettxtnode ki jagah banai aur us jgh me funct ke parem ko pass kiye 
+    // aur is pure ko wrap kr ke varible olpi jo ke bacha hai usse conncet kr diye  
+    document.querySelector('.language').appendChild(opli)
+}
+addOptiwayse("golang")
+// ye ho gaya optimize way se add krna 
+// bade project me hamesha isko hi prefer krna "innerhtml ko nhi"
+
+// ************EDIT ELEMENT
+const editelem = document.querySelector("li:nth-child(3)")
+// console.log(editelem)
+const thrdchng = document.createElement('li')
+thrdchng.textContent = "ye chnge hua optiway se"
+// editelem.replaceWith(thrdchng)
+
+const khudseedit = document.querySelector("li:nth-child(1)")
+// console.log(khudseedit);
+const frstedit = document.createElement('li')
+frstedit.textContent = "ye thoda sa khud se kiya"
+// khudseedit.replaceWith(frstedit)
+
+// "REPLACEWITH use kiya jaata hai select kiye hue element ko replace krna new jo bhi banai hai usse"
+
+// const dirctedit = document.querySelector("li:nth-child(1)")
+// dirctedit.innerHTML = "ye hua direct chnge"
+// ye dirct edit krne k trika
+
+const outerse = document.querySelector("li:first-child")
+outerse.outerHTML = '<li>Ye chnge hua outer html ke through</li>'
+// isme pura tag daal ke likhna hota hai jo ke lamba hai and ye jo first daala gaya hai isko first and last hi select kr skhte hai bhic ka sele krne ke lie brackect me number daal dena
+
+// ***********REMOVE ELEMENT************
+const remoelem = document.querySelector("li:nth-child(7)")
+// console.log(removing);
+remoelem.remove()
+</script>
+</html>
